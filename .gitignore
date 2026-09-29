@@ -1,0 +1,6 @@
+storage/*.sqlite
+storage/*.sqlite-journal
+storage/logs/
+storage/installed.lock
+uploads/*
+!uploads/.gitkeep

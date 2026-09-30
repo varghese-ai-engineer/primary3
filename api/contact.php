@@ -102,5 +102,16 @@ if ($to && filter_var($to, FILTER_VALIDATE_EMAIL)) {
     }
 }
 
+// 6b. Acknowledgment email to the visitor
+$ackBody = "Hi {$data['name']},\n\n"
+    . "Thank you for contacting " . setting('site_name', 'Primary Infotech') . " — we have received your message:\n\n"
+    . "\"{$data['message']}\"\n\n"
+    . "A member of our team will reply within one business day. If your enquiry is urgent, "
+    . "call us at " . setting('contact_phone') . ".\n\n"
+    . "— " . setting('site_name', 'Primary Infotech') . "\n";
+if (!send_mail($data['email'], 'We received your message — ' . setting('site_name', 'Primary Infotech'), $ackBody)) {
+    log_error("Contact acknowledgment failed for submission #$id to {$data['email']}");
+}
+
 // 7. Respond
 $respond(true, setting('contact_success_text', 'Thanks — we will be in touch shortly.'));

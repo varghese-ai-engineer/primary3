@@ -9,7 +9,7 @@ ServerSignature Off
   RewriteEngine On
   # If installed in a sub-folder, set: RewriteBase /subfolder/
   # RewriteBase /
-  RewriteBase /primaryinfotech/
+  RewriteBase /
   # Force HTTPS (uncomment in production)
   # RewriteCond %{HTTPS} off
   # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

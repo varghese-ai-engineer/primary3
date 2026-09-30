@@ -21,7 +21,7 @@ function ht_seed(): void
         ['general', 'founding_year', 'Founding year', 'text', '2014'],
 
         ['contact', 'contact_email', 'Public email', 'email', 'contact@primaryinfotech.com'],
-        ['contact', 'contact_phone', 'Public phone', 'text', '+91-866-776-1197'],
+        ['contact', 'contact_phone', 'Public phone', 'text', '+91 99945 29788'],
         ['contact', 'availability', 'Availability line', 'text', 'Our agents work for you 24/7 × 365'],
         ['contact', 'response_time', 'Response time line', 'text', 'Typical response within 24 hours'],
         ['contact', 'address_locality', 'City', 'text', 'Coimbatore'],
